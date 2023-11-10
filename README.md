@@ -5,7 +5,7 @@ User can ADD, EDIT, and DELETE items on their shopping list.
 
 ## Hosting & Database
 ```
-Hosting: 
+Hosting: https://catieeking509.github.io/shopping-list-react-node
 CodeSandbox: https://z3jm6m-8080.csb.app
 ```
 
