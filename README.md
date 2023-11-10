@@ -1,6 +1,5 @@
 # Shopping List App
 
-
 This project utilizes a database on CodeSandbox and allows the user to handle their shopping list.
 User can ADD, EDIT, and DELETE items on their shopping list.
 
@@ -25,4 +24,7 @@ AS A person preparing for the holidays
 I WANT TO be able to keep track of presents to be purchased/have already been purchased
 SO THAT my partner and I don't double up on gifts for others
 ```
+## Future
+
+In the future, I will have fewer Github issues...and (as always) will continue to work towards better functionality and a faster process.
 
