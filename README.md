@@ -9,7 +9,7 @@ Hosting:
 https://catieeking509.github.io/shopping-list-react-node
 
 CodeSandbox:
-https://z3jm6m-8080.csb.app
+https://codesandbox.io/p/sandbox/shopping-list-node-js-z3jm6m
 
 
 ## User Stories
