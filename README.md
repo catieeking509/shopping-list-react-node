@@ -4,13 +4,13 @@ This project utilizes a database on CodeSandbox and allows the user to handle th
 User can ADD, EDIT, and DELETE items on their shopping list.
 
 ## Hosting & Database
-```
+
 Hosting:
 https://catieeking509.github.io/shopping-list-react-node
 
 CodeSandbox:
 https://z3jm6m-8080.csb.app
-```
+
 
 ## User Stories
 
