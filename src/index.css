@@ -1,6 +1,9 @@
 
 * {
-  background-color: #556b2f;
+  background-image: url("./Components/Images/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: antiquewhite;
 }
 

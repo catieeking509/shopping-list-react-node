@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 
-
 export default function ShoppingForm({ submitItem, submitButtonText= "ADD", defaultItemName= "", defaultQuantity= "", className="form-add" }) {
 
   const [item, setItem] = useState(defaultItemName);

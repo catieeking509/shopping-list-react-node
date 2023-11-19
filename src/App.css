@@ -11,19 +11,6 @@ main {
     overflow-wrap: break-word;
     margin: 15px;
 }
-    
-ul {
-    font-size: 18px;
-    list-style-type: none;
-    margin: 15px;
-    padding: 0 100px 0 0;
-    border-left: 2.5px solid #000000f7;
-}
-    
-li {
-    padding: 10px 0 5px 10px;
-    border-bottom: .5px solid #000000f7;
-}
 
 /***** Main Styles ******/
   
@@ -45,7 +32,20 @@ li {
     margin: 50px;
     text-decoration: underline darkgray 1px;
 }
-  
+    
+.shopping-list {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 15px;
+    padding: 0 100px 0 0;
+    border-left: 2.5px solid #000000f7;
+}
+    
+.shopping-item {
+    padding: 10px 0 5px 10px;
+    border-bottom: .5px solid #000000f7;
+}
+
 .shopping-list-buttons {
     display: flex;
     justify-content: flex-end;
@@ -56,17 +56,32 @@ li {
     background-color: darkgray;
     margin: 5px;
     color: black;
+    width: 100px;
+    height: 25px;
+}
+
+.buy-button {
+    background-color: darkgray;
+    color: black;
+    margin: 5px;
+    width: 100px;
+    height: 25px;
 }
 
 .delete-button {
     background-color: lightcoral;
     margin: 5px;
     color: black;
+    width: 100px;
+    height: 25px;
 }
 
 .submit-button {
     background-color: darkgray;
     color: black;
+    margin: 5px;
+    width: 100px;
+    height: 25px;
 }
 
 .form-add {
@@ -94,13 +109,38 @@ li {
 .form-edit {
     font-style: italic;
     font-size: small;
-    display: flex;
+    display: block;
+}
+
+.form-edit .item-name { 
+    width: 50%;
+    height: 80%;
+    font-size: 110%;
+    margin: 0 0 0 10px;
+}
+
+.form-edit .quantity {
+    width: 50%;
+    height: 80%;
+    font-size: 110%;
+    margin: 15px 0 0 5px;
+}
+
+.form-edit .submit-button {
+    float: right;
 }
   
   
 /*** MEDIA STYLES ***/
 
 @media screen and (max-width: 768px) {
+
+    main {
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .form-add {
         text-align: center;
@@ -109,38 +149,33 @@ li {
     }
 
     .form-add .item-name { 
-        width: 90%; 
-        height: 40%; 
-        font-size: 50%;
+        width: 90%;
+        height: 60%;
+        font-size: 80%;
     }
 
     .form-add .quantity {
-        width: 90%; 
-        height: 40%; 
-        font-size: 50%;
+        width: 90%;
+        height: 60%;
+        font-size: 80%;
     }
 
-    ul {
-        margin: 5px;
-        padding: 0 45px 0 0;
+    .shopping-list {
+        margin: 25px 0 0 0;
+        padding: 0;
+        max-width: 85%;
     }
 }
 
 @media screen and (max-width: 576px) {
 
-    main {
-        margin: 5px;
-    }
-
-    ul {
-        margin: 5px;
-        padding: 0 25px 0 0;
+    .shopping-list {
         font-size: 15px;
     }
 
     .form-add {
         text-align: center;
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 20px;
     }
 

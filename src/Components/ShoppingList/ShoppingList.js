@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import ShoppingForm from '../ShoppingForm/ShoppingForm';
 
 
-function ShoppingItem({ id, itemName, quantity, deleteItem, updateItem }) {
+function ShoppingItem({ id, itemName, quantity, deleteItem, updateItem, submitButtonText }) {
 
     const [isEdit, setEdit] = useState(false);
 
@@ -21,6 +21,10 @@ function ShoppingItem({ id, itemName, quantity, deleteItem, updateItem }) {
         setEdit(false);
     }
 
+    function handleLink(event) {
+        window.open(`https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=${itemName}`, '_blank');
+    }
+
     const ReadOnlyJsx = (
         <span>
             {itemName} ({ quantity })
@@ -30,16 +34,18 @@ function ShoppingItem({ id, itemName, quantity, deleteItem, updateItem }) {
     const EditJsx = (
         <ShoppingForm 
             className="form-edit"
+            submitButtonText='UPDATE'
             submitItem= {handleUpdate}
-            submitButtonText="UPDATE"
             defaultItemName={itemName}
-            defaultQuantity={quantity} />
+            defaultQuantity={quantity} 
+        />
     );
 
     return (
-        <li>
+        <li className='shopping-item'>
             {isEdit ? EditJsx : ReadOnlyJsx}
             <div className='shopping-list-buttons'>
+                <button className='buy-button' onClick={handleLink} hidden={isEdit}>BUY</button>
                 <button className='cancel-edit-button' onClick={handleEdit}>{isEdit ? "CANCEL" : "EDIT"}</button>
                 <button className='delete-button' onClick= {handleDelete} hidden={isEdit}>DELETE</button>
             </div>
@@ -60,7 +66,7 @@ export default function ShoppingList({ items, deleteItem, updateItem }) {
     ));
 
   return (
-    <ul>
+    <ul className='shopping-list'>
         {ItemsJSX}
     </ul>
   );
