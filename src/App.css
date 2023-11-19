@@ -107,7 +107,7 @@ main {
 
 .form-edit {
     font-style: italic;
-    font-size: small;
+    font-size: 15px;
     display: block;
     color: black;
 }
