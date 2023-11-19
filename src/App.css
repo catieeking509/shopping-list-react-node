@@ -32,7 +32,7 @@ main {
 .shopping-list {
     font-size: 20px;
     list-style-type: none;
-    margin: 15px;
+    margin: 15px 25px 0 5px;
     padding: 0 10px 0 0;
     border-left: 2.5px solid #000000f7;
     backdrop-filter: blur(15px);
