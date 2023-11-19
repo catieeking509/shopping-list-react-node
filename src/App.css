@@ -1,9 +1,5 @@
 /***** General Styles ******/
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 main {
     font-family: 'Nunito', sans-serif;
     display: grid;
@@ -34,11 +30,12 @@ main {
 }
     
 .shopping-list {
-    font-size: 18px;
+    font-size: 20px;
     list-style-type: none;
     margin: 15px;
-    padding: 0 100px 0 0;
+    padding: 0 10px 0 0;
     border-left: 2.5px solid #000000f7;
+    backdrop-filter: blur(15px);
 }
     
 .shopping-item {
@@ -98,18 +95,21 @@ main {
     width: 200px; 
     height: 40px; 
     font-size: 50%;
+    color: black;
 }
 
 .form-add .quantity {
     width: 200px; 
     height: 40px; 
     font-size: 50%;
+    color: black;
 }
 
 .form-edit {
     font-style: italic;
     font-size: small;
     display: block;
+    color: black;
 }
 
 .form-edit .item-name { 
@@ -117,6 +117,7 @@ main {
     height: 80%;
     font-size: 110%;
     margin: 0 0 0 10px;
+    color: black;
 }
 
 .form-edit .quantity {
@@ -124,10 +125,12 @@ main {
     height: 80%;
     font-size: 110%;
     margin: 15px 0 0 5px;
+    color: black;
 }
 
 .form-edit .submit-button {
     float: right;
+    background-color: rgb(105, 168, 132);
 }
   
   
@@ -187,4 +190,5 @@ main {
         font-size: 15px;
         margin: 50px 25px 0 0;
     }
+
 }

@@ -1,10 +1,15 @@
 
-* {
-  background-image: url("./Components/Images/background.png");
+*, *::before, *::after {
+  box-sizing: border-box;
+  color: antiquewhite;
+}
+
+html {
+  background: url("./Components/Images/background.png") rgb(238, 234, 234);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  color: antiquewhite;
+  background-blend-mode: multiply;
 }
 
 body {
