@@ -37,7 +37,7 @@ export default function ShoppingForm({ submitItem, submitButtonText= "ADD", defa
       </div>
 
       <div className='form-row'>
-        <label htmlFor="quantity"> + QUANTITY </label>
+        <label htmlFor="quantity">  QUANTITY </label>
         <input className='quantity'
           type="number" 
           id="quantity" 

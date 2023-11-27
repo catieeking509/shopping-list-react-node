@@ -49,20 +49,12 @@ main {
     margin: 0 10px 0 10px;
 }
 
-.cancel-edit-button {
+.cancel-edit-button, .buy-button {
     background-color: darkgray;
     margin: 5px;
     color: black;
     width: 100px;
-    height: 25px;
-}
-
-.buy-button {
-    background-color: darkgray;
-    color: black;
-    margin: 5px;
-    width: 100px;
-    height: 25px;
+    height: 35px;
 }
 
 .delete-button {
@@ -70,7 +62,7 @@ main {
     margin: 5px;
     color: black;
     width: 100px;
-    height: 25px;
+    height: 35px;
 }
 
 .submit-button {
@@ -78,7 +70,7 @@ main {
     color: black;
     margin: 5px;
     width: 100px;
-    height: 25px;
+    height: 35px;
 }
 
 .form-add {
@@ -103,28 +95,29 @@ main {
     height: 40px; 
     font-size: 50%;
     color: black;
+    margin-left: 14px;
 }
 
 .form-edit {
     font-style: italic;
-    font-size: 15px;
+    font-size: 18px;
     display: block;
     color: black;
 }
 
 .form-edit .item-name { 
-    width: 50%;
-    height: 80%;
-    font-size: 110%;
+    width: 40%;
+    height: 90%;
+    font-size: 120%;
     margin: 0 0 0 10px;
     color: black;
 }
 
 .form-edit .quantity {
-    width: 50%;
-    height: 80%;
-    font-size: 110%;
-    margin: 15px 0 0 5px;
+    width: 40%;
+    height: 90%;
+    font-size: 120%;
+    margin: 15px 0 0 18px;
     color: black;
 }
 
